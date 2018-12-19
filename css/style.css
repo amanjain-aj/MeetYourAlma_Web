@@ -103,7 +103,7 @@ body {
   background:#49D292;
   color:#fff;
   margin-bottom:20px;
-    display:none;
+    display: none;
 }
 .alert1{
   text-align: center;
@@ -111,7 +111,7 @@ body {
   background:#49D292;
   color:#fff;
   margin-bottom:20px;
-  display:none;
+  display: none;
 }
 table {
     font-family: arial, sans-serif;
