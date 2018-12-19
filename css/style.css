@@ -97,3 +97,34 @@ body {
 	background-color: #1CA347;
 	border-color: #1CA347;
 }
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#49D292;
+  color:#fff;
+  margin-bottom:20px;
+    display:none;
+}
+.alert1{
+  text-align: center;
+  padding:10px;
+  background:#49D292;
+  color:#fff;
+  margin-bottom:20px;
+  display:none;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
