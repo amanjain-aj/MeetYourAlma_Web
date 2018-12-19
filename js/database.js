@@ -22,7 +22,7 @@
     
            
       
-       saveMessage(name,email,password,regd,batch,branch,role);
+       saveMessage(name,email,password,regd,batch,branch,role,status);
         
      //To display alert after submission
        document.querySelector('.alert').style.display = 'block';
@@ -45,7 +45,7 @@
 		  
    
 //Function to save values to firebase database
-  function saveMessage(name,email,role,regd,batch,branch,password) {
+  function saveMessage(name,email,role,regd,batch,branch,password,status) {
       
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
@@ -55,7 +55,8 @@
         regd: regd,
         batch: batch,
         branch: branch,
-        password: password
+        password: password,
+        status: 'unverified'
         });
       
 }

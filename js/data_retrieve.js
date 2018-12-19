@@ -30,8 +30,8 @@
             "<td>"+ alumni[k].branch + "</td>"+
             "<td>"+ alumni[k].batch + "</td>"+
             "<td>"+ alumni[k].regd + "</td>"+
-            // "<td>"+ alumni[k].password + "</td>"+
-            "<td><button data-arrayIndex='"+ i +"'>Edit</button><button data-arrayIndex='"+ i +"'>Verify</button></td>"+"</tr>";
+            "<td>"+ alumni[k].status + "</td>"+
+            "<td><button data-arrayIndex='"+ i +"'>Verify</button></td>"+"</tr>";
 }
 
 $("#tableHtml").html(html);		
