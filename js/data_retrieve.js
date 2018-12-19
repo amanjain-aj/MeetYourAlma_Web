@@ -16,29 +16,80 @@
        // var branch = alumni[k].branch;
        // var email = alumni[k].email;
        // var name = alumni[k].name;
-       // var password = alumni[k].password;
+        
        // var regd = alumni[k].regd; 
        // var xyz = alumni[k];
+       function output() {
 
+       	  var password = alumni[k].password;
+       	  return password;
+       }
+       function givestatus() {
+       		var status = alumni[k].status;
+       		return status;
+       }
+     //   var tr = " ";
+     //   tr = tr + "<tr>";    
+ 	   // tr = tr + "<td >" +  alumni[k].name + "</td>";
+     //   tr = tr + "<td >" +  alumni[k].email + "</td>";
+     //   tr = tr + "<td >" + 	alumni[k].branch + "</td>"; 
+     //   tr = tr + "<td >" +  alumni[k].batch + "</td>";
+     //   tr = tr + "<td >" + alumni[k].regd + "</td>";
+     //   tr = tr + "<td >" + alumni[k].status + "</td>";              
+     //   tr = tr + "<td><input value='Verify' type='button' class='theButton' id='ma' onclick='test()'></td>";
+     //   tr = tr + "</tr>";
 	
 	var html = "";
 
-    html +="<tr>"+
+    html = html + "<tr>"+ 
             "<td>"+ (i+1) + "</td>"+
             "<td>"+ alumni[k].name + "</td>"+
             "<td>"+ alumni[k].email + "</td>"+
             "<td>"+ alumni[k].branch + "</td>"+
             "<td>"+ alumni[k].batch + "</td>"+
             "<td>"+ alumni[k].regd + "</td>"+
-            "<td>"+ alumni[k].status + "</td>"+
-            "<td><button data-arrayIndex='"+ i +"'>Verify</button></td>"+"</tr>";
+            // "<td>"+ alumni[k].status + "</td>"+
+            "<td><input value='Verify' type='button' class='theButton'  id='ma' ></td>"+
+            "</tr>";  	
+            $("#tableHtml").html(html);		
+            
 }
 
-$("#tableHtml").html(html);		
-		// for (var j = 0; j < col.length; j++) 
-		// 	{
-  //               var tabCell = tr.insertCell(-1);
-  //               tabCell.innerHTML = alumni[i][col[j]];
-  //           }
+		
+$('body').on('click', 'input.theButton', function(e) {
+	var txt;
+	e.preventDefault();
+	txt = $(this).parent().prev().prev().prev().prev().text();
+	password = output();
+	
+	
+	     var email = txt;
+	     var password = password;
+		 firebase.auth().createUserWithEmailAndPassword(email, password)
+		 .then(function(e){
+
+		 	var userId = firebase.auth().currentUser.uid;
+            console.log(userId);
+            if(userId!=''){
+            	window.alert('User Verified');
+            	var user = firebase.auth().currentUser;
+
+				user.sendEmailVerification().then(function() {
+				  // Email sent.
+				}).catch(function(error) {
+				  // An error happened.
+				});
+            }
+
+
+		 }).catch(function(error) {
+		  // Handle Errors here.
+		  var errorCode = error.code;
+		  var errorMessage = error.message;
+		  // ...
+		});
+
+
+})
 	
 }

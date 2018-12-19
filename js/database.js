@@ -45,7 +45,7 @@
 		  
    
 //Function to save values to firebase database
-  function saveMessage(name,email,role,regd,batch,branch,password,status) {
+  function saveMessage(name,email,password,regd,batch,branch,role,status) {
       
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
