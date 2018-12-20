@@ -9,7 +9,22 @@ function LogIn() {
            console.log("signed in");
            var userId = firebase.auth().currentUser.uid;
            console.log(userId);
-           document.querySelector('.alert1').style.display = 'block';
+            document.querySelector('.alert1').style.display = 'block';
+          
+           setTimeout(function(){
+          
+           },250);
+           setTimeout(function(){
+ 			if(designation == 'admin') {
+ 				document.location.href = "admin_db.html";
+ 			}	   
+  		    else if (designation == 'student') {
+  		    	document.location.href = "student_db.html";
+  		    }
+  		    else{
+  		    	document.location.href = "alumni_db.html";
+  		    }
+		}, 500);
        });
 	
       
