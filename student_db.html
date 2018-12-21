@@ -5,9 +5,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	
 	
 		
 	
@@ -15,7 +14,150 @@
 
 </head>
 <body>
-		
+		<div id="wrapper" class="animate">
+    <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-dark " style="background-color: #49D292;">
+      <span class="navbar-toggler-icon leftmenutrigger"></span>
+      <a class="navbar-brand" href="index.html">MeetYourAlma</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav animate side-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Issues</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-md-auto d-md-flex">
+          <li class="nav-item">
+            <a class="nav-link" href="student_db.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Issues</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-lg btn-danger btn-block" style="color: #fff;"onclick="LogOut()">Logout</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+          <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">10th Convocation </h5>
+              <h6 class="card-subtitle mb-2 text-muted">11th December,2018</h6>
+              <p class="card-text">The University Welcomes all the students</p><a href="" class="card-link">Description</a>
+              <!-- <a href="http://websitedesigntamilnadu.com" class="card-link">Another link</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Summer Internship Opportunity 2019</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2 Months</h6>
+              <p class="card-text">Microsoft Intership</p><a href="" class="card-link">Description</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">VSSUT National Hackathon</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Coming Soon</h6>
+              <p class="card-text">Problem Statements To Be Released Soon</p><a href="" class="card-link">Description</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+             <h5 class="card-title">Samavesh 2k19</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Coming Soon</h6>
+              <p class="card-text">The Official Technical Fest Of VSSUT</p><a href="" class="card-link">Description</a>
+            </div>
+          </div>
+        </div>
+       <!--  <div class="col">
+          <div class="card">
+            <div class="card-body">
+               <h5 class="card-title">10th Convocation </h5>
+              <h6 class="card-subtitle mb-2 text-muted">11th December,2018</h6>
+              <p class="card-text">The University Welcomes all the students</p><a href="" class="card-link">Description</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Issues</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Unavialbaility Of Drinking Water In The Campus</h6>
+              <p class="card-text">The water coolers and taps provided in the university campus often serve proper drinking water</p>
+              <a href="https://bootsnipp.com/pradeep330" class="card-link">Posted By: Anonymous</a>
+              <a href="http://websitedesigntamilnadu.com" class="card-link">Reply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
 
 
 	    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
@@ -25,8 +167,11 @@
 		<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-messaging.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-functions.js"></script>	
 		<script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
-		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+		 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	   
+
 		<script src="./js/main.js" type="text/javascript" charset="utf-8" ></script>
 	    <<script src="./js/auth.js" type="text/javascript" charset="utf-8"></script>
 	    

@@ -19,7 +19,14 @@
        var batch = getInputVal('batch');
        var branch = getInputVal('branch');
        var password = getInputVal('password');
-    
+       if (email.length < 4) {
+        alert('Please enter an email address.');
+        return;
+      }
+      if (password.length < 4) {
+        alert('Please enter a password.');
+        return;
+      }
            
       
        saveMessage(name,email,password,regd,batch,branch,role,status);

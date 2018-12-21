@@ -8,6 +8,7 @@
     var alumni = data.val();
     var keys = Object.keys(alumni);
     
+    var html = "";
     
     for (var i = 0 ; i < keys.length; i++) {
             
@@ -39,7 +40,6 @@
      //   tr = tr + "<td><input value='Verify' type='button' class='theButton' id='ma' onclick='test()'></td>";
      //   tr = tr + "</tr>";
 	
-	var html = "";
 
     html = html + "<tr>"+ 
             "<td>"+ (i+1) + "</td>"+
@@ -51,8 +51,8 @@
             // "<td>"+ alumni[k].status + "</td>"+
             "<td><input value='Verify' type='button' class='theButton'  id='ma' ></td>"+
             "</tr>";  	
-            $("#tableHtml").html(html);		
-            
+            var x = $("#tableHtml").html(html);		
+            console.log(x);
 }
 
 		
